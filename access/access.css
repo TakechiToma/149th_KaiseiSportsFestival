@@ -2,6 +2,7 @@ html{
   font-size: 62.5%;
 }
 body{
+  margin: 0;
   background-color: #1B191B;
   font-size: 1.6em;
   font-family: Roboto;
@@ -9,36 +10,41 @@ body{
 }
 h1{
   padding-left: 0.5rem;
-  position: relative; top:; left: 0.6rem;
+  margin: 2rem auto -0.2rem 1.5rem;
   font-family: Sawarabi Gothic;
   font-size: 2.4rem;
-  border-left: 0.5rem solid #F9CE7A;
+  border-left: 0.3rem solid #F9CE7A;
 }
 p{
-  margin-top: -1rem;
-  position: relative; top:0; left: 4rem;
+  margin: 0 2rem 0 2rem
 }
-.access_map{
-  text-align: center;
+.google-map{
+  position: relative;
+  width: 60%;
+  height: 0;
+  padding-top: 45%;
+  margin: 1rem auto;
 }
 iframe{
-  text-align: center;
-  width: 340px;
-  height: 200px;
+  position: absolute; top:0; left:0;
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
 }
-@media screen and (min-width:600px){
+img{
+  display: block;
+  width: 70%;
+  margin: 1rem auto;
+}
+@media screen and (min-width:800px){
   html{
     font-size: 80%;
   }
   .sp{
     display: none;
   }
-  iframe{
-    width: 1000px;
-    height: 500px;
-  }
 }
-@media screen and (max-width:599px){
+@media screen and (max-width:799px){
   .pc{
     display: none;
   }

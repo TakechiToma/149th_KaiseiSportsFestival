@@ -2,7 +2,7 @@ html{
   font-size: 62.5%;
 }
 body{
-  width: 100%;
+  margin: 0;
   background-color: #1B191B;
   font-size: 1.6em;
   font-family: Roboto;
@@ -10,8 +10,7 @@ body{
 }
 h1{
   padding-left: 0.5rem;
-  margin-bottom: -1rem;
-  position: relative; top:; left: 0.6rem;
+  margin: 2rem auto 0 1.5rem;
   font-family: Sawarabi Gothic;
   font-size: 2.4rem;
   border-left: 0.3rem solid #C22E1A;
@@ -22,7 +21,7 @@ h1{
 button{
   width: 19rem;
   height: 4rem;
-  position: absolute; right:3rem;
+  position: absolute; right:2%;
   color: #FFFEF2;
   font-family: Sawarabi Gothic;
   font-size: 1.6rem;
@@ -30,9 +29,7 @@ button{
   border: 0.1rem solid #FFFEF2;
 }
 h2{
-  margin-top: 1rem;
-  margin-bottom: 1rem;
-  position:relative; left: 3rem;
+  margin: 1rem auto 1rem 3rem;
   font-family: Sawarabi Mincho;
   font-size: 1.8rem;
   display: table;
@@ -42,17 +39,15 @@ h2{
 }
 img{
   display: block;
-  width: 30rem;
-  height: 20rem;
-  margin: 0 auto;
-  padding: 0 5rem 0 5rem;
-}
-.name{
-  margin: 0.5rem auto -0.5rem 2rem;
-  font-size: 1.8rem;
+  width: 80%;
+  padding: 0 10%;
 }
 p{
-  margin: 0 2rem;
+  margin: 0 5% 3rem 5%;
+}
+.name{
+  margin: 1rem auto -0.5rem 5%;
+  font-size: 1.8rem;
 }
 .unjyun_title{
   border-bottom-color: #C22E1A;
@@ -83,12 +78,18 @@ p{
     display: none;
   }
 }
+@media screen and (min-width: 600px) and (max-width: 799px){
+  img{
+    width: 48rem;
+    padding: 0 calc((100% - 48rem) / 2);
+  }
+}
 @media screen and (min-width:800px) {
   html{
     font-size: 80%;
   }
-  .button{
-    height: 4rem;
+  h1{
+    margin-bottom: -3rem;
   }
   button{
     margin-right: 3rem;
@@ -97,48 +98,58 @@ p{
   .unjyun,.singikai{
     display: inline-flex;
     width: 100%;
-    margin-top: 5rem;
+    margin: 3% 0;
     justify-content: flex-start;
+    align-items: center;
   }
   .sinpan,.kiroku{
     display: inline-flex;
     width: 100%;
-    margin-top: 5rem;
-    justify-content: flex-end;
+    margin: 3% 0;
+    justify-content: flex-start;
     flex-direction: row-reverse;
+    align-items: center;
+  }
+  .unjyun_sentence,.singikai_sentence{
+    display: inline;
+    width: 40%;
+    max-width: 50rem;
+    margin-left: 5%;
+  }
+  .sinpan_sentence,.kiroku_sentence{
+    display: inline;
+    width: 40%;
+    max-width: 50rem;
+    margin-right: 5%;
+  }
+  h2{
+    margin: 0 auto 1rem 1rem;
+  }
+  p{
+    margin: 0;
+  }
+  .name{
+    margin-left: 0;
+  }
+  img{
+    display: inline;
+    width: 40%;
+    padding: 0 5%;
+    margin: 0 auto;
   }
   .unjyun_img--sp,.sinpan_img--sp,.singikai_img--sp,.kiroku_img--sp{
     display: none;
   }
   .unjyun_img--pc{
-    display: inline;
     background-color: #C22E1A;
-    margin-left: 10rem;
   }
   .sinpan_img--pc{
-    display: inline;
     background-color: #A2A8AB;
-    margin-right: 10rem;
   }
   .singikai_img--pc{
-    display: block;
     background-color: #565656;
-    margin-left: 10rem;
   }
   .kiroku_img--pc{
-    display: block;
-    text-align: left;
     background-color: #F9CE7A;
-    margin-right: 10rem;
-  }
-  .unjyun_sentence,.singikai_sentence{
-    display: inline;
-    min-width: 30rem;
-    margin-left: 5rem;
-  }
-  .sinpan_sentence,.kiroku_sentence{
-    display: inline;
-    min-width: 30rem;
-    margin-right: 5rem;
   }
 }

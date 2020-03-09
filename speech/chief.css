@@ -2,7 +2,7 @@ html{
   font-size: 62.5%;
 }
 body{
-  width: 100%;
+  margin: 0;
   background-color: #1B191B;
   font-size: 1.6em;
   font-family: Roboto;
@@ -10,8 +10,7 @@ body{
 }
 h1{
   padding-left: 0.5rem;
-  margin-bottom: -1rem;
-  position: relative; top:; left: 0.6rem;
+  margin: 2rem auto 0 1.5rem;
   font-family: Sawarabi Gothic;
   font-size: 2.4rem;
   border-left: 0.3rem solid #C22E1A;
@@ -22,7 +21,7 @@ h1{
 button{
   width: 19rem;
   height: 4rem;
-  position: absolute; right:3rem;
+  position: absolute; right:2%;
   color: #FFFEF2;
   font-family: Sawarabi Gothic;
   font-size: 1.6rem;
@@ -30,9 +29,7 @@ button{
   background-color: #1B191B;
 }
 h2{
-  margin-top: 1rem;
-  margin-bottom: 1rem;
-  position:relative; left: 3rem;
+  margin: 1rem auto 1rem 3rem;
   font-family: Sawarabi Mincho;
   font-size: 1.8rem;
   display: table;
@@ -44,17 +41,15 @@ h2{
 }
 img{
   display: block;
-  width: 30rem;
-  height: 20rem;
-  margin: 0 auto;
-  padding: 0 5rem 0 5rem;
-}
-.name{
-  margin: 0.5rem auto -0.5rem 2rem;
-  font-size: 1.8rem;
+  width: 80%;
+  padding: 0 10%;
 }
 p{
-  margin: 0 2rem;
+  margin: 0 5% 3rem 5%;
+}
+.name{
+  margin: 0.5rem auto -0.5rem 5%;
+  font-size: 1.8rem;
 }
 .red_title{
   border-top-color: #C02828;
@@ -117,12 +112,18 @@ p{
     display: none;
   }
 }
+@media screen and (min-width: 600px) and (max-width: 799px){
+  img{
+    width: 48rem;
+    padding: 0 calc((100% - 48rem) / 2);
+  }
+}
 @media screen and (min-width: 800px){
   html{
     font-size: 80%;
   }
-  .button{
-    height: 4rem;
+  h1{
+    margin-bottom: -3rem;
   }
   button{
     margin-right: 3rem;
@@ -131,69 +132,65 @@ p{
   .red,.yellow,.blue,.black{
     display: inline-flex;
     width: 100%;
-    margin-top: 5rem;
+    margin: 3% 0;
     justify-content: flex-start;
+    align-items: center;
   }
   .orange,.green,.purple,.white{
     display: inline-flex;
     width: 100%;
-    margin-top: 5rem;
-    justify-content: flex-end;
+    margin: 3% 0;
+    justify-content: flex-start;
     flex-direction: row-reverse;
+    align-items: center;
   }
   .red_img--sp,.orange_img--sp,.yellow_img--sp,.green_img--sp,.blue_img--sp,.purple_img--sp,.black_img--sp,.white_img--sp{
     display: none;
   }
   .red_sentence,.yellow_sentence,.blue_sentence,.black_sentence{
     display: inline;
-    min-width: 30rem;
-    max-width: 40rem;
-    margin-left: 5rem;
+    width: 40%;
+    margin-left: 5%;
   }
   .orange_sentence,.green_sentence,.purple_sentence,.white_sentence{
     display: inline;
-    min-width: 30rem;
-    max-width: 40rem;
-    margin-right: 5rem;
+    width: 40%;
+    margin-right: 5%;
+  }
+  p{
+    margin: 0;
+  }
+  .name{
+    margin-left: 0;
+  }
+  img{
+    display: inline;
+    width: 40%;
+    padding: 0 5%;
+    margin: 0 auto;
   }
   .red_img--pc{
-    display: inline;
     background-color: #C02828;
-    margin-left: 5rem;
   }
   .orange_img--pc{
-    display: inline;
     background-color: #CF6300;
-    margin-right: 5rem;
   }
   .yellow_img--pc{
-    display: inline;
     background-color: #C2B42E;
-    margin-left: 5rem;
   }
   .green_img--pc{
-    display: inline;
     background-color: #1F7C10;
-    margin-right: 5rem;
   }
   .blue_img--pc{
-    display: inline;
     background-color: #3245AB;
-    margin-left: 5rem;
   }
   .purple_img--pc{
-    display: inline;
     background-color: #7939AB;
-    margin-right: 5rem;
   }
   .black_img--pc{
-    display: inline;
     background-color: #323232;
-    margin-left: 5rem;
   }
   .white_img--pc{
-    display: inline;
     background-color: #F2FFFF;
-    margin-right: 5rem;
   }
 }
