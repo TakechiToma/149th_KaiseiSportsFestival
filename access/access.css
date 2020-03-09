@@ -1,5 +1,5 @@
 html{
-  font-size: 62.5%
+  font-size: 62.5%;
 }
 body{
   background-color: #1B191B;
@@ -8,7 +8,7 @@ body{
   color: #FFFEF2;
 }
 h1{
-  padding-left: 1rem;
+  padding-left: 0.5rem;
   position: relative; top:; left: 0.6rem;
   font-family: Sawarabi Gothic;
   font-size: 2.4rem;
