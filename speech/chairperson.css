@@ -1,0 +1,155 @@
+html{
+  font-size: 62.5%;
+}
+body{
+  margin: 0;
+  background-color: #1B191B;
+  font-size: 1.6em;
+  font-family: Roboto;
+  color: #FFFEF2;
+}
+h1{
+  padding-left: 0.5rem;
+  margin: 2rem auto 0 1.5rem;
+  font-family: Sawarabi Gothic;
+  font-size: 2.4rem;
+  border-left: 0.3rem solid #C22E1A;
+}
+.button{
+  height:  4rem;
+}
+button{
+  width: 19rem;
+  height: 4rem;
+  position: absolute; right:2%;
+  color: #FFFEF2;
+  font-family: Sawarabi Gothic;
+  font-size: 1.6rem;
+  background-color: #C22E1A;
+  border: 0.1rem solid #FFFEF2;
+}
+h2{
+  margin: 1rem auto 1rem 3rem;
+  font-family: Sawarabi Mincho;
+  font-size: 1.8rem;
+  display: table;
+  padding: 0 2rem 0 2rem;
+  border-bottom-width: 0.15rem;
+  border-bottom-style: solid;
+}
+img{
+  display: block;
+  width: 80%;
+  padding: 0 10%;
+}
+p{
+  margin: 0 5% 3rem 5%;
+}
+.name{
+  margin: 1rem auto -0.5rem 5%;
+  font-size: 1.8rem;
+}
+.unjyun_title{
+  border-bottom-color: #C22E1A;
+}
+.unjyun_img--sp{
+  background-color: #C22E1A;
+}
+.sinpan_title{
+  border-bottom-color: #A2A8AB;
+}
+.sinpan_img--sp{
+  background-color: #A2A8AB;
+}
+.singikai_title{
+  border-bottom-color: #565656;
+}
+.singikai_img--sp{
+  background-color: #565656;
+}
+.kiroku_title{
+  border-bottom-color: #F9CE7A;
+}
+.kiroku_img--sp{
+  background-color: #F9CE7A;
+}
+@media screen and (max-width:799px){
+  .unjyun_img--pc,.sinpan_img--pc,.singikai_img--pc,.kiroku_img--pc{
+    display: none;
+  }
+}
+@media screen and (min-width: 600px) and (max-width: 799px){
+  img{
+    width: 48rem;
+    padding: 0 calc((100% - 48rem) / 2);
+  }
+}
+@media screen and (min-width:800px) {
+  html{
+    font-size: 80%;
+  }
+  h1{
+    margin-bottom: -3rem;
+  }
+  button{
+    margin-right: 3rem;
+    margin-left: auto;
+  }
+  .unjyun,.singikai{
+    display: inline-flex;
+    width: 100%;
+    margin: 3% 0;
+    justify-content: flex-start;
+    align-items: center;
+  }
+  .sinpan,.kiroku{
+    display: inline-flex;
+    width: 100%;
+    margin: 3% 0;
+    justify-content: flex-start;
+    flex-direction: row-reverse;
+    align-items: center;
+  }
+  .unjyun_sentence,.singikai_sentence{
+    display: inline;
+    width: 40%;
+    max-width: 50rem;
+    margin-left: 5%;
+  }
+  .sinpan_sentence,.kiroku_sentence{
+    display: inline;
+    width: 40%;
+    max-width: 50rem;
+    margin-right: 5%;
+  }
+  h2{
+    margin: 0 auto 1rem 1rem;
+  }
+  p{
+    margin: 0;
+  }
+  .name{
+    margin-left: 0;
+  }
+  img{
+    display: inline;
+    width: 40%;
+    padding: 0 5%;
+    margin: 0 auto;
+  }
+  .unjyun_img--sp,.sinpan_img--sp,.singikai_img--sp,.kiroku_img--sp{
+    display: none;
+  }
+  .unjyun_img--pc{
+    background-color: #C22E1A;
+  }
+  .sinpan_img--pc{
+    background-color: #A2A8AB;
+  }
+  .singikai_img--pc{
+    background-color: #565656;
+  }
+  .kiroku_img--pc{
+    background-color: #F9CE7A;
+  }
+}
