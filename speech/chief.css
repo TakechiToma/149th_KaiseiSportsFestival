@@ -157,6 +157,9 @@ p{
     width: 40%;
     margin-right: 5%;
   }
+  h2{
+    margin: 0 auto 1rem 1rem;
+  }
   p{
     margin: 0;
   }
